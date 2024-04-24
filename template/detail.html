@@ -1,0 +1,29 @@
+{{define "detail"}}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style/detail.css" />
+    <link rel="stylesheet" href="/static/style/header.css" />
+    <title>Detail</title>
+</head>
+{{template "header.html" .}}
+
+<body>
+    <div class="detail">
+        <img src="{{.Image.URL}}" alt="Image de {{.Nom}}" style="width: 300px;">
+        <div class="description">
+            <h2>{{.Nom}}{{.Suite}}</h2>
+            <p>Tailles disponibles: {{.Taille}}</p>
+            <p>Description: {{.Description}}</p>
+            <p>Prix: {{.Prix}} {{if .Reduc}}(Réduction: {{.Reduc}}){{end}}</p>
+            <a href="/accueil">Ajouter au panier</a>
+        </div>
+    </div>
+</body>
+
+</html>
+{{end}}

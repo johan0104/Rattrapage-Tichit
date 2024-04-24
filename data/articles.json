@@ -3,61 +3,67 @@
         {
             "id": 1,
             "image": {"url": "/static/image/19A.webp"},
-            "nom": "PALACE PULL A CAPUCHE UNISEXE CHASSEUR",
-            "prix": "148€",
+            "nom": "PALACE PULL A CAPUCHE",
+            "suite": "UNISEXE CHASSEUR",
+            "prix": "148 €",
             "reduc": "",
             "description": "",
-            "taille": "XS - s - M"
+            "taille": "XS - S - M"
         },
 
         {
             "id": 2,
             "image": {"url": "/static/image/21A.webp"},
-            "nom": "PALACE PULL A CAPUCHON MARINE",
-            "prix": "138€",
+            "nom": "PALACE PULL A CAPUCHON",
+            "suite": "MARINE",
+            "prix": "138 €",
             "reduc": "",
             "description": "",
-            "taille": "XS - s - M"
+            "taille": "XS - S - M"
         },
 
         {
             "id": 3,
             "image": {"url": "/static/image/22A.webp"},
-            "nom": "PALACE PULL CREW PASSEPOSE NOIR",
-            "prix": "128€",
-            "reduc": "90€",
+            "nom": "PALACE PULL CREW",
+            "suite": "PASSEPOSE NOIR",
+            "prix": "128 €",
+            "reduc": "90 €",
             "description": "",
-            "taille": "XS - s - M"
+            "taille": "XS - S - M"
         },
 
         {
             "id": 4,
             "image": {"url": "/static/image/16A.webp"},
-            "nom": "PALACE WASHED TERRY 1/4 PLACKET HOOD MOJITO",
-            "prix": "168€",
+            "nom": "PALACE WASHED TERRY 1/4",
+            "suite": "PLACKET HOOD MOJITO",
+            "prix": "168 €",
             "reduc": "",
             "description": "",
-            "taille": "XS - s - M"
+            "taille": "XS - S - M"
         },
 
         {
             "id": 5,
             "image": {"url": "/static/image/34B.webp"},
-            "nom": "PALACE PANTALON BOSY JEAN STONE",
-            "prix": "125",
+            "nom": "PALACE PANTALON BOSSY",
+            "suite": "JEAN STONE",
+            "prix": "125 €",
             "reduc": "",
             "description": "",
-            "taille": "XS - s - M"
+            "taille": "XS - S - M"
         },
 
         {
             "id": 6,
             "image": {"url": "/static/image/33B.webp"},
-            "nom": "PALACE PANTALON CARGO GORE-TEX R-TEX NOIR",
-            "prix": "110€",
+            "nom": "PALACE PANTALON CARGO",
+            "suite": "GORE-TEX R-TEX NOIR",
+            "prix": "110 €",
             "reduc": "",
             "description": "",
-            "taille": "XS - s - M"
+            "taille": "XS - S - M"
         }
     ]
 }

@@ -11,7 +11,7 @@ import (
 func Serveur() {
 	http.HandleFunc("/accueil", controller.AccueilHandler)
 	http.HandleFunc("/ajout", controller.AjoutHandler)
-	http.HandleFunc("/detail", controller.DetailHandler)
+	http.HandleFunc("/detail/", controller.DetailHandler)
 
 
 	rootDoc, _ := os.Getwd()

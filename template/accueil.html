@@ -1,35 +1,40 @@
 {{define "accueil"}}
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content ="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/style/accueil.css" />
     <link rel="stylesheet" href="/static/style/header.css" />
     <title>Acceuil</title>
 </head>
 {{template "header.html" .}}
+
 <body>
-<h1 style="
+    <h1 style="
     padding-top: 50px;
     padding-left: 30px;
 ">LES</h1>
-<h1 style="
+    <h1 style="
     padding-left: 30px;
 ">PRODUITS</h1>
-<ul>
-    {{range .Articles}}
-    <li>
-        <h2>{{.Nom}}</h2>
-        <img src="{{.Image.URL}}" alt="Image de {{.Nom}}">
-        <p>Prix: {{.Prix}}</p>
-        <p>Réduction: {{if .Reduc}}{{.Reduc}}{{else}}Pas de réduction{{end}}</p>
-        <p>Description: {{if .Description}}{{.Description}}{{else}}Pas de description{{end}}</p>
-        <p>Taille disponible: {{.Taille}}</p>
-    </li>
-    {{end}}
-</ul>
+    <ul>
+        {{range .Articles}}
+        <li>
+            <div class="vignette" style="width: 511px; height: 240px;">
+                <img class="photo" src="{{.Image.URL}}" alt="Image de {{.Nom}}" style="width: 250px;height: 180px;margin-left: 10px;margin-right: 10px;">
+                <div class="corps">
+                    <h4>{{.Nom}}</h4>
+                    <h4>{{.Suite}}</h4>
+                    <p>Prix: {{.Prix}}         {{.Reduc}}</p>
+                    <a href="/detail/{{.ID}}" class="btn">Consulter</a>
+                </div>
+            </div>
+        </li>
+        {{end}}
+    </ul>
 </body>
 </html>
 {{end}}
