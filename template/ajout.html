@@ -1,0 +1,35 @@
+{{define "ajout"}}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style/ajout.css" />
+    <link rel="stylesheet" href="/static/style/header.css" />
+    <title>Ajout</title>
+</head>
+{{template "header.html" .}}
+
+<body>
+    <h1>Ajouter un Nouvel Article</h1>
+    <form class= "formulaire" action="/ajout" method="POST">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required><br>
+        <label for="suite">Suite:</label>
+        <input type="text" id="suite" name="suite"><br>
+        <label for="prix">Prix:</label>
+        <input type="text" id="prix" name="prix" required><br>
+        <label for="reduc">Réduction:</label>
+        <input type="text" id="reduc" name="reduc"><br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea><br>
+        <label for="taille">Taille:</label>
+        <input type="text" id="taille" name="taille" required><br>
+        <button type="submit">Ajouter Article</button>
+    </form>
+</body>
+
+</html>
+{{end}}

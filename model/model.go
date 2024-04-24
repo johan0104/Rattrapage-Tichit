@@ -44,7 +44,7 @@ func LoadArticlesData(filePath string) (Articles, error) {
 
 func init() {
     var err error
-    articlesData, err = LoadArticlesData("chemin/vers/le/fichier.json")
+    articlesData, err = LoadArticlesData("data/articles.json")
     if err != nil {
         log.Fatalf("Error loading articles data: %s", err)
     }
@@ -59,3 +59,30 @@ func GetProductByID(id int) (*Article, error) {
     return nil, errors.New("product not found")
 }
 
+
+
+func AddArticle(article *Article) error {
+    if article.Image.URL == "" {
+        article.Image.URL = "/static/image/16A.webp"
+    }
+
+    maxID := 0
+    for _, a := range articlesData.Articles {
+        if a.ID > maxID {
+            maxID = a.ID
+        }
+    }
+    article.ID = maxID + 1 
+
+    articlesData.Articles = append(articlesData.Articles, *article)
+
+    return SaveArticlesData("data/articles.json")
+}
+
+func SaveArticlesData(filePath string) error {
+    jsonData, err := json.Marshal(articlesData)
+    if err != nil {
+        return err
+    }
+    return ioutil.WriteFile(filePath, jsonData, 0644)
+}

@@ -14,13 +14,13 @@
 
 <body>
     <div class="detail">
-        <img src="{{.Image.URL}}" alt="Image de {{.Nom}}" style="width: 300px;">
+        <img class="photo" src="{{.Image.URL}}" alt="Image de {{.Nom}}" style="width: 450px;">
         <div class="description">
-            <h2>{{.Nom}}{{.Suite}}</h2>
+            <h2>{{.Nom}} {{.Suite}}</h2>
             <p>Tailles disponibles: {{.Taille}}</p>
-            <p>Description: {{.Description}}</p>
+            <p>{{.Description}}</p>
             <p>Prix: {{.Prix}} {{if .Reduc}}(Réduction: {{.Reduc}}){{end}}</p>
-            <a href="/accueil">Ajouter au panier</a>
+            <a class="retour" href="/accueil">Retour</a>
         </div>
     </div>
 </body>

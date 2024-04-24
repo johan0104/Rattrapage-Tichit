@@ -1,0 +1,9 @@
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    border-radius: 10px;
+    justify-content: flex-start;
+    margin: 20px;
+    padding: 20px;
+}

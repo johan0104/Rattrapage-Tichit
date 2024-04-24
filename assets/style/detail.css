@@ -1,0 +1,30 @@
+.detail {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    border-radius: 10px;
+    justify-content: flex-start;
+    margin: 20px;
+    padding: 20px;
+}
+
+.photo {
+    border-radius: 10px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.retour {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    width: 90px;
+    text-decoration: none;
+}
